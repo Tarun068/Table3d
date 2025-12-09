@@ -53,6 +53,11 @@ const Configurator = () => {
 
   return (
     <div className="configurator-layout">
+      <ViewerPanel
+        glbPath={product.model}
+        materialConfig={materialConfig}
+        selections={selections}
+      />
       <div className="group">
         <div className="product-selector">
           <select
@@ -73,12 +78,6 @@ const Configurator = () => {
           materialConfig={materialConfig}
         />
       </div>
-
-      <ViewerPanel
-        glbPath={product.model}
-        materialConfig={materialConfig}
-        selections={selections}
-      />
     </div>
   );
 };
