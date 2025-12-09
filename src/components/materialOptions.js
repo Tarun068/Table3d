@@ -179,7 +179,7 @@ export const MATERIAL_OPTIONS = {
     },
   },
 
-  sixTableOptions: {
+  circleTableOptions: {
     woodFinish: {
       id: "woodFinish",
       title: "Wood ",

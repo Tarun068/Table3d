@@ -15,6 +15,6 @@ export const PRODUCTS = [
     id: "cricleTable",
     name: "Circle Table",
     model: "/models/circletable.glb",
-    materialOptionsKey: "sixTableOptions",
+    materialOptionsKey: "circleTableOptions",
   },
 ];
