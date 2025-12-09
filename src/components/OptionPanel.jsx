@@ -1,8 +1,6 @@
-import React from "react";
-import { MATERIAL_OPTIONS } from "../components/materialOptions";
 import ColorSwatch from "./ColorSwatch";
 
-const OptionPanel = ({ selections, onChangeSelection }) => {
+const OptionPanel = ({ selections, onChangeSelection, materialConfig }) => {
   return (
     <aside className="option-panel">
       <div className="option-panel-header">
@@ -11,7 +9,7 @@ const OptionPanel = ({ selections, onChangeSelection }) => {
       </div>
 
       <div className="option-groups">
-        {Object.values(MATERIAL_OPTIONS).map((group) => (
+        {Object.values(materialConfig).map((group) => (
           <div key={group.id} className="option-group">
             <div className="option-group-title">{group.title}</div>
             <div className="option-group-swatches">

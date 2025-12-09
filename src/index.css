@@ -169,7 +169,49 @@ body,
   flex-direction: column;
   min-width: 0;
 }
+.product-selector {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.product-selector select {
+  width: 90%;
+  padding: 10px;
+}
 
+/* For texture swatches */
+.swatch-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* For solid colors */
+.swatch-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Shared styles */
+.swatch {
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+}
+
+.swatch--selected {
+  border-color: #000;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
 .viewer-wrapper {
   flex: 1;
   min-height: 0;
